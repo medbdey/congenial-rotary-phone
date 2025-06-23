@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(234, 29%, 20%);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    width: 55rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 11px;
+    border-radius: 30px;
+ 
+}
+.hero{
+ 
+    grid-column: 2 / 2;
+    grid-row: 1 / 6;
+}
+.hero img{
+    position: relative;
+    left: 4.5rem;
+    top: 1.4rem;
+    width: 80%;
+    height: 95%;
+    border-radius: 30px;
+}
+h1{
+    font-size: 3rem;
+    color: hsl(234, 29%, 20%);
+    margin: 5rem 0 1rem 0;
+    padding-left: 4rem;
+
+}
+.head p{
+    font-size: 15px;
+    color: hsl(234, 29%, 20%);
+    padding-left: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+ul {
+    list-style: none;
+    padding-left: 4rem;
+}
+ul li {
+    font-size: 15px;
+    font-weight: 500;
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 0.5rem;
+    
+}
+ul li img{
+    margin-right: 1rem;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+ 
+ 
+    padding: 2rem 0;
+}
+.forms label span{
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    margin-left: 4rem;
+  
+    font-size: 13px;
+}
+.forms p{
+    display: none;
+    color: rgb(247, 51, 51);
+    font-weight: 700;
+    left: 18rem;
+    position: relative;
+    top: -1rem;
+    font-size: 13px;
+}
+.forms input{
+    width: 76%;
+    height: 3rem;
+    border-radius: 6px;
+    border: 1px solid hsl(234, 29%, 20%);
+    outline: none;
+    padding-left: 17px;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.forms button{
+    width: 70%;
+    height: 3rem;
+    border-radius: 6px;
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 4rem;
+}
+.succes{
+    min-height: 26rem;
+    max-width: 28rem;
+    display: none;
+    flex-direction: column;
+ 
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+ 
+}
+.succes img{
+    width: 50px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+}
+.succes h2{
+    font-size: 3rem;
+    color: hsl(234, 29%, 20%);
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+}
+.succes p{
+    margin-top: 0;
+    font-size: 15px;
+    color: hsl(234, 29%, 20%);
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+}
+.spn{
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+.succes button{
+    width: 80%;
+    height: 3rem;
+    border-radius: 6px;
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 3rem;
+}
+.errs::placeholder{
+    color: rgb(247, 51, 51);
+}
+@media screen and (max-width: 768px){
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 6rem;
+    height: 100vh;}
+    .container{
+    display: grid;
+    grid-template-columns: auto;
+    width: 30rem;
+    min-height: 70rem;
+    row-gap: 0;
+    }
+    .hero{
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+        margin: 0;
+        padding:0;
+        height: 100%;
+        position: relative;
+        object-fit: contain;
+        top: 9rem;
+        background-image: url(assets/images/mobile.svg);
+ 
+    }
+    .hero img{
+        display: none;
+    }
+    .head{
+        position: relative;
+        top: 15rem;
+        text-wrap: wrap;
+ 
+    }
+    .head p {
+        position: relative;
+        top: 1rem;
+        left: .5rem;
+    }
+    .forms, ul, .head{
+        margin: 0;
+        position: relative;
+         left: 1rem;
+ 
+    }
+    ul{
+        top: 5rem;
+
+    }
+    .forms{
+         bottom: 2rem;
+         left: 2rem;
+    }
+    #mail{
+        width: 19rem;
+        position: relative;
+        right: 6rem;
+        margin-left: 0;
+    }
+    .forms  span{
+        position: relative;
+        bottom: 2.5rem;
+        right: .5rem;
+    }
+    .forms button{
+        width: 21rem;
+        position: relative;
+        left: 3rem;
+        margin-left: 0;
+    }
+    .forms p{
+    display: none;
+    color: rgb(247, 51, 51);
+    font-weight: 700;
+    left: 16rem;
+    position: absolute;
+    top: 1rem;
+    font-size: 13px;
+}
+.succes{
+    display: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: 40rem;
+    align-content: center;
+ 
+}
+.succes img, h2 ,p{
+    position: relative;
+    right: 2rem;
+    bottom: 3rem;
+}
+ .succes button{
+    position: relative;
+    top: 7rem;
+    right: 1rem;
+ 
+ }
+}
